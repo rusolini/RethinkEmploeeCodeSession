@@ -1,0 +1,76 @@
+<h1>Data Table</h1>
+
+<form [formGroup]="selectedItemForm">
+  <table>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Last Name</th>
+      <th>First Name</th>
+      <th>Email</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of data">
+      <td>{{ item.id }}</td>
+      <td>
+        <ng-container *ngIf="selectedItem !== item; else editLastNameTemplate">
+          {{ item.lastName }}
+        </ng-container>
+        <ng-template #editLastNameTemplate>
+          <input type="text" formControlName="lastName" />
+        </ng-template>
+      </td>
+      <td>
+        <ng-container *ngIf="selectedItem !== item; else editFirstNameTemplate">
+          {{ item.firstName }}
+        </ng-container>
+        <ng-template #editFirstNameTemplate>
+          <input type="text" formControlName="firstName" />
+        </ng-template>
+      </td>
+      <td>
+        <ng-container *ngIf="selectedItem !== item; else editEmailTemplate">
+          {{ item.email }}
+        </ng-container>
+        <ng-template #editEmailTemplate>
+          <input type="text" formControlName="email" />
+        </ng-template>
+      </td>
+      <td>
+        <ng-container *ngIf="selectedItem !== item">
+          <button (click)="editItem(item)">Edit</button>
+          <button (click)="deleteItem(item)">Delete</button>
+        </ng-container>
+        <ng-container *ngIf="selectedItem === item">
+          <button (click)="saveItem()" [disabled]="selectedItemForm.invalid">Save</button>
+          <button (click)="cancelEdit()">Cancel</button>
+        </ng-container>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</form>
+
+<form [formGroup]="newItemForm">
+  <table>
+    <tbody>
+    <tr>
+      <td></td>
+      <td>
+        <input type="text" formControlName="newLastName" />
+      </td>
+      <td>
+        <input type="text" formControlName="newFirstName" />
+      </td>
+      <td>
+        <input type="text" formControlName="newEmail" />
+      </td>
+      <td>
+        <button (click)="addItem()" [disabled]="newItemForm.invalid">Add Item</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</form>

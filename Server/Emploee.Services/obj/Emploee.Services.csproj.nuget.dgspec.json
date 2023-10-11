@@ -1,0 +1,128 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\0Work\\0Work\\RETHINK\\Emploee\\Server\\Emploee.Services\\Emploee.Services.csproj": {}
+  },
+  "projects": {
+    "D:\\0Work\\0Work\\RETHINK\\Emploee\\Server\\Emploee.DataAccess\\Emploee.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\0Work\\0Work\\RETHINK\\Emploee\\Server\\Emploee.DataAccess\\Emploee.DataAccess.csproj",
+        "projectName": "Emploee.DataAccess",
+        "projectPath": "D:\\0Work\\0Work\\RETHINK\\Emploee\\Server\\Emploee.DataAccess\\Emploee.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\russo\\.nuget\\packages\\",
+        "outputPath": "D:\\0Work\\0Work\\RETHINK\\Emploee\\Server\\Emploee.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\russo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\0Work\\0Work\\RETHINK\\Emploee\\Server\\Emploee.Services\\Emploee.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\0Work\\0Work\\RETHINK\\Emploee\\Server\\Emploee.Services\\Emploee.Services.csproj",
+        "projectName": "Emploee.Services",
+        "projectPath": "D:\\0Work\\0Work\\RETHINK\\Emploee\\Server\\Emploee.Services\\Emploee.Services.csproj",
+        "packagesPath": "C:\\Users\\russo\\.nuget\\packages\\",
+        "outputPath": "D:\\0Work\\0Work\\RETHINK\\Emploee\\Server\\Emploee.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\russo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\0Work\\0Work\\RETHINK\\Emploee\\Server\\Emploee.DataAccess\\Emploee.DataAccess.csproj": {
+                "projectPath": "D:\\0Work\\0Work\\RETHINK\\Emploee\\Server\\Emploee.DataAccess\\Emploee.DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

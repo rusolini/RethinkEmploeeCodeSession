@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "lHCOjROCmQmPVd2zd1W0IBrBbeK3DYbz/tW7Po+kXO8UGoNR2j3V+ps3rNOVM1LmSDaZG85zOXoetcsjQj/9PQ==",
+  "success": true,
+  "projectFilePath": "D:\\0Work\\0Work\\RETHINK\\Emploee\\Server\\Emploee.Services\\Emploee.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\russo\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
